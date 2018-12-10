@@ -1,8 +1,0 @@
-factorToChar <- function(dataframe){
-   ## converts all factor columns on a dataframe into char
-   ## find which columns are factors
-   f <- sapply(dataframe, is.factor)
-   ## convert those columns to characters
-   dataframe[f] <- lapply(dataframe[f], as.character)
-   return(dataframe)
-}
