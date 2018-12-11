@@ -1,11 +1,11 @@
 yIntoOrderX <- function(x,y) {
 	#########################################################
-  ## function to put vector y in the same order as vector x
+	## function to put vector y in the same order as vector x
 	## for example,
 	## x <- c("b","c","a","d")
 	## y <- c("DD","AA","BB","CC")
 	## => yIntoOrderX(x, y) == c("BB","CC","AA","DD")
-  #########################################################
+	#########################################################
 	
 	rankOfX <- rank(x, ties.method = "last")
 	sortedY <- sort(y)
