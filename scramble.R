@@ -1,13 +1,13 @@
 scramble <- function(x, y=NULL){
 	##########################################################################
-  ## function that will take an array of length n and scramble its entries
+	## function that will take an array of length n and scramble its entries
 	## in such a way that sum(x) remains the same but the values are messed up
-  ## example:
-  ## scramble(rep(1,9)) == c(1.3, 1.1, 0.8, 1.0, 0.7, 1.0, 0.8, 1.2, 1.1)
-  ##
+	## example:
+	## scramble(rep(1,9)) == c(1.3, 1.1, 0.8, 1.0, 0.7, 1.0, 0.8, 1.2, 1.1)
+	##
 	## OPTIONAL if you'd like specific positions to have the highest scrambled
 	## values, specify those in a TRUE/FALSE vector y (of same length as x)
-  ##########################################################################
+	##########################################################################
 	
 	total <- sum(x)
 	entries <- length(x)
@@ -36,6 +36,5 @@ scramble <- function(x, y=NULL){
 		output[which(y)] <- part1
 		output[which(!y)] <- part2
 	}
-	
 	return(output)
 }
