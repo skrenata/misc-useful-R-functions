@@ -1,6 +1,6 @@
 cbPalette <- function(palt=1, 
-					  reverse=FALSE,
-					  short=FALSE){
+		      reverse=FALSE,
+		      short=FALSE){
 ## define a few colourblind-friendly palettes
 ## calling cbPalette() will give you a 12-point rainbow-like palette
 ##
