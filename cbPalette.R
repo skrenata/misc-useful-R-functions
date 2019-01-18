@@ -1,12 +1,20 @@
 cbPalette <- function(palt=1, 
 					  reverse=FALSE,
 					  short=FALSE){
-	## 1 or any other thing == rainbow (12)
-	## 2 == dark red to dark blue (12)
-	## 3 == dark brown to dark green (12)
-	## 4 == purple / pink to dark green (12)
-	## 5 == blue to yellow (9)
-	## 6 == purple to yellow (9)
+    ## define a few colourblind-friendly palettes
+    ## calling cbPalette() will give you a 12-point rainbow-like palette
+    ##
+	## "palt" can take one of these values:
+    ## 1 or any other thing == rainbow - not so friendly but pretty (12 points)
+	## 2 == dark red to dark blue (12 points)
+	## 3 == dark brown to dark green (12 points)
+	## 4 == purple / pink to dark green (12 points)
+	## 5 == blue to yellow (9 points)
+	## 6 == purple to yellow (9 points)
+    ##
+    ## reverse=TRUE if you want the colours to be given in reverse order
+    ## short=TRUE if you want only six points (or five for shorter palettes)
+    
 	plotPalette <- c("#b2182b", "#67001f", "#D55E00", "#E69F00", 
 					"#F0E442", "#7fbc41", "#009E73", "#56B4E9", 
 					"#0072B2", "#542788", "#CC79A7", "#777777")		
