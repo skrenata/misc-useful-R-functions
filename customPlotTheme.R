@@ -3,7 +3,7 @@ library(ggplot2)
 
 customPlotTheme <- function(titleAlign=0.5,
 							legPos="top",
-							legTitle=FALSE,
+						    legTitle=FALSE,
 							baseTheme=theme_bw(),
 							aspRatio=1){
 	## custom ggplot2 theme that I like
