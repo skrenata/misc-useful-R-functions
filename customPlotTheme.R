@@ -1,10 +1,10 @@
 ## you must have already called ggplot2 for this to work
 library(ggplot2)
 customPlotTheme <- function(titleAlign=0.5,
-							legPos="top",
-						    legTitle=FALSE,
-							baseTheme=theme_bw(),
-							aspRatio=1){
+			    legPos="top",
+			    legTitle=FALSE,
+			    baseTheme=theme_bw(),
+			    aspRatio=1){
 	## custom ggplot2 theme that I like
 	## call customPlotTheme() to have all default values:
 	## - centralised title
